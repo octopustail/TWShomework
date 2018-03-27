@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>userLogin</title>
+</head>
+<body>
+<span>username</span><input id="usrname" type="text">
+<span>password</span><input id="psw" type="password">
+<button id="submit" onclick="checkidpsd()" >submit</button>
+
+</body>
+
+<script>
+  function checkidpsd() {
+    var username,
+        psw,
+        uservalue,
+        pswvalue;
+        username = document.getElementById('usrname');
+        psw = document.getElementById('psw');
+
+        if(username.value === '123' && psw.value === '123'){
+          alert('登陆成功');
+    } else {
+          psw.value = '';
+          alert('密码错误');
+    }
+
+  }
+</script>
+</html>
